@@ -4,33 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Temporizador</title>
 </head>
 <body class="geral">
-    <main class="geral">
-        <section class="geral-navegacao">
-            <div class="geral-navegacao-bloco">
-                <a href="index.html" class="geral-navegacao-bloco-texto">home</a>
-            </div>
+    <section class="navegacao">
+        <div class="navegacao-bloco">
+            <a href="index.html" class="navegacao-bloco-texto">Home</a>
+        </div>
 
-            <div class="geral-navegacao-bloco">
-                <a href="temporizador.html" class="geral-navegacao-bloco-texto">temporizador</a>
-            </div>
+        <div class="navegacao-bloco">
+            <a href="temporizador.html" class="navegacao-bloco-texto">Temporizador</a>
+        </div>
 
-            <div class="geral-navegacao-bloco">
-                <a href="cronograma.html" class="geral-navegacao-bloco-texto">cronograma</a>
-            </div>
+        <div class="navegacao-bloco">
+            <a href="cronograma.html" class="navegacao-bloco-texto">Cronograma</a>
+        </div>
 
-            <div class="geral-navegacao-bloco">
-                <a href="calendario.html" class="geral-navegacao-bloco-texto">calendário</a>
-            </div>
-        </section>
+        <div class="navegacao-bloco">
+            <a href="calendario.html" class="navegacao-bloco-texto">Calendário</a>
+        </div>
+    </section>
 
-        <section class="geral-conteudo">
-            <div class="geral-conteudo-blocoTask">
-                <h1 class="geral-conteudo-blocoTask-texto">Tarefas</h1>
+    <section class="conteudo">
+        <div id="cronometro" class="conteudo-cronometro">
+            <h2 id="timer" class="conteudo-cronometro-timer">
+                00:00
+            </h2>
+
+            <div id="acoes" class="conteudo-cronometro-botoes">
+                <button id="iniciar" action="start" class="conteudo-cronometro-botoes-botao">
+                    <i class="fa-solid fa-play" style="color: black;"></i>
+                </button>
+
+                <button id="parar" class="conteudo-cronometro-botoes-botao">
+                    <i class="fa-solid fa-square" style="color: black;"></i>
+                </button>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="conteudo-externo2">
+            <div id="marcasLista" class="conteudo-externo2-marcas">
+                <p> marca 1: 00:00</p>
+                <p> marca 2: 00:00</p>
+            </div>
+            <div class="conteudo-externo2-marcas">
+                oi
+            </div>
+        </div>
+    </section>
 </body>
 </html>
