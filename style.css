@@ -10,6 +10,7 @@
     --corDois: #433D8B;
     --corTres: #23158E;
     --corQuatro: #11052A;
+    --corCinco: #D4D7D8;
 }
 
 html, body{
@@ -66,21 +67,83 @@ html, body{
 }
 
 .conteudo-externo{
-    height: 30%;
+    height: 15%;
+    
+    font-size: 2rem;
+    color: var(--corQuatro);
 }
 
 .conteudo-blocoTask{
     background-color: var(--corUm);
-
+    
+    padding: 2rem;
+    padding-top: 1rem;
+    
     width: 90%;
     flex-grow: 1;
 
+    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    padding-top: 1rem;
+    gap: 0.5rem;
+
 }
 
 .conteudo-blocoTask-adicionar{
     color: var(--corTres);
+
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.conteudo-blocoTask-adicionar-botao{
+    background-color: var(--corTres);
+    color: var(--corDeFundo);
+
+    height: 2.5rem;
+    width: 2.5rem;
+
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-blocoTask-adicionar-texto{
+    background-color: var(--corDeFundo);
+
+    flex-grow: 1;
+    height: 60%;
+
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-blocoTask-adicionar-texto-t{
+    padding-left: 1rem;
+}
+
+.conteudo-blocoTask-tasks{
+    color: var(--corDeFundo);
+}
+
+.conteudo-blocoTask-tasks-task{
+    background-color: var(--corCinco);
+    height: 2rem;
+
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-blocoTask-tasks-task-texto{
+    padding: 1rem;
 }
