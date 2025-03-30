@@ -171,8 +171,8 @@ html, body{
 }
 
 .conteudo-cronometro-timer{
-    height: 70%;
-    width: 70%;
+    height: 20rem;
+    width: 20rem;
 
     background: linear-gradient(180deg, #23158E, #433D8B);
 
@@ -218,7 +218,6 @@ html, body{
 
 .conteudo-externo2{
     width: 70%;
-    
     margin-top: 2rem;
 
     display: flex;
