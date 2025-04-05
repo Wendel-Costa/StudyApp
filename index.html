@@ -4,25 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>StudyApp</title>
 </head>
 <body class="geral">
     <section class="navegacao">
-        <div class="navegacao-bloco">
-            <a href="index.html" class="navegacao-bloco-texto">Home</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="temporizador.html" class="navegacao-bloco-texto">Temporizador</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="cronograma.html" class="navegacao-bloco-texto">Cronograma</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="calendario.html" class="navegacao-bloco-texto">Calendário</a>
-        </div>
+        <a href="index.html" class="navegacao-bloco">Home</a>
+        <a href="temporizador.html" class="navegacao-bloco">Temporizador</a>
+        <a href="cronograma.html" class="navegacao-bloco">Cronograma</a>
+        <a href="calendario.html" class="navegacao-bloco">Calendário</a>
     </section>
 
     <section class="conteudo">
@@ -39,13 +29,10 @@
                     <h1 class="conteudo-blocoTask-adicionar-texto-t">Tarefas</h1>
                 </div>
             </div>
-
-            <div class="conteudo-blocoTask-tasks">
-                <div class="conteudo-blocoTask-tasks-task">
-                    <p class="conteudo-blocoTask-tasks-task-texto">Terminar esse projeto</p>
-                </div>
-            </div>
+            <div class="conteudo-blocoTask-tasks" id="taskList"></div>
+            <button id="deleteCompleted" class="conteudo-blocoTask-delete">Apagar Concluídas</button>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -9,47 +9,36 @@
 </head>
 <body class="geral">
     <section class="navegacao">
-        <div class="navegacao-bloco">
-            <a href="index.html" class="navegacao-bloco-texto">Home</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="temporizador.html" class="navegacao-bloco-texto">Temporizador</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="cronograma.html" class="navegacao-bloco-texto">Cronograma</a>
-        </div>
-
-        <div class="navegacao-bloco">
-            <a href="calendario.html" class="navegacao-bloco-texto">Calendário</a>
-        </div>
+            <a href="index.html" class="navegacao-bloco">Home</a>
+            <a href="temporizador.html" class="navegacao-bloco">Temporizador</a>
+            <a href="cronograma.html" class="navegacao-bloco">Cronograma</a>
+            <a href="calendario.html" class="navegacao-bloco">Calendário</a>
     </section>
 
     <section class="conteudo">
-        <div id="cronometro" class="conteudo-cronometro">
-            <h2 id="timer" class="conteudo-cronometro-timer">
-                00:00:00
-            </h2>
+        <div class="conteudo-tema">
+            <select id="temaSelect" class="conteudo-tema-select">
+                <option value="">Escolha um tema</option>
+            </select>
+            <input type="text" id="novoTema" placeholder="Novo tema" class="conteudo-tema-input">
+            <button id="addTema" class="conteudo-tema-botao">Adicionar</button>
+        </div>
 
+        <div id="cronometro" class="conteudo-cronometro">
+            <h2 id="timer" class="conteudo-cronometro-timer">00:00:00</h2>
             <div id="acoes" class="conteudo-cronometro-botoes">
                 <button id="iniciar" action="start" class="conteudo-cronometro-botoes-botao">
                     <i class="fa-solid fa-play" style="color: black;"></i>
                 </button>
-
                 <button id="parar" class="conteudo-cronometro-botoes-botao">
                     <i class="fa-solid fa-square" style="color: black;"></i>
                 </button>
             </div>
         </div>
+
         <div class="conteudo-externo2">
-            <div id="marcasLista" class="conteudo-externo2-marcas">
-                <p> marca 1: 00:00</p>
-                <p> marca 2: 00:00</p>
-            </div>
-            <div class="conteudo-externo2-marcas">
-                Oi
-            </div>
+            <div id="marcasLista" class="conteudo-externo2-marcas"></div>
+            <div id="tarefasLista" class="conteudo-externo2-marcas"></div>
         </div>
     </section>
     <script src="script.js"></script>
